@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body id="body">
+    <table border="10" align="center">
+        <tr>
+            <th colspan="2">Calculator</th>
+        </tr>
+        <tr>
+            <td>Enter First Number</td>
+            <td><input type="text" name="first" id="first" placeholder="Enter Numeric Value"></td>
+        </tr>
+        <tr>
+            <td>Enter Secound Number</td>
+            <td><input type="text" name="second" id="second" placeholder="Enter Numeric Value"></td>
+        </tr>
+        <tr>
+            <td>Select Choice</td>
+            <td>
+                <select id="ope">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td ><button onclick="calculate()">Calculate</button></td>
+        </tr>
+        <tr>
+            <td>Result</td>
+            <td><input type="text" name="result" id="result" readonly=""></td>
+        </tr>
+    </table>
+      
+
+    <script type="text/javascript">
+        function calculate() {
+            var a = document.getElementById('first').value;
+           
+            var b = document.getElementById('second').value;
+            
+            var ope = document.getElementById('ope').value;
+            if (ope == '+')
+                var res = parseInt(a) + parseInt(b);
+            if (ope == '-')
+                var res = parseInt(a) - parseInt(b);
+            if (ope == '*')
+                var res = parseInt(a) * parseInt(b);
+            if (ope == '/')
+                var res = parseInt(a) / parseInt(b);
+
+            document.getElementById('result').value = res;
+
+
+
+        }
+    </script>
