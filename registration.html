@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration Form</title>
+</head>
+<body bgcolor="#D4E6F2">
+  <h1>Registration Form</h1>
+  <form action="/submit" method="post">
+    <!-- Student's Name -->
+     <label for="student">Student's Name:</label><br>
+    <input type="text" id="student" name="student" required placeholder="Enter Student Name"><br><br>
+
+    <!-- Father's Name -->
+    <label for="fatherName">Father's Name:</label><br>
+    <input type="text" id="fatherName" name="fatherName" required placeholder="Enter Father Name"><br><br>
+
+    <!-- Mother's Name -->
+    <label for="motherName">Mother's Name:</label><br>
+    <input type="text" id="motherName" name="motherName" required placeholder="Enter Mother Name"><br><br>
+
+    <!-- Address -->
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="40" required ></textarea><br><br>
+
+    <!-- Gender -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+
+    <!-- Qualifying Semester -->
+    <label>Qualifying Semester(s):</label><br>
+    <input type="checkbox" id="sem1" name="semester" value="1">
+    <label for="sem1">1st</label>
+    <input type="checkbox" id="sem2" name="semester" value="2">
+    <label for="sem2">2nd</label>
+    <input type="checkbox" id="sem3" name="semester" value="3">
+    <label for="sem3">3rd</label>
+    <input type="checkbox" id="sem4" name="semester" value="4">
+    <label for="sem4">4th</label><br><br>
+
+    <!-- Email ID -->
+    <label for="email">Email ID:</label><br>
+    <input type="email" id="email" name="email" required placeholder="Enter Email ID"><br><br>
+
+    <!-- Phone Number -->
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required><br><br>
+
+    <!-- Submission Date -->
+    <label for="submissionDate">Submission Date:</label><br>
+    <input type="date" id="submissionDate" name="submissionDate" required><br><br>
+
+    <!-- Website URL -->
+    <label for="website">Your Website URL:</label><br>
+    <input type="url" id="website" name="website" placeholder="https://google.com"><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
