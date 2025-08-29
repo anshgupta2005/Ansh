@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en>">
+<head>
+    <title>Registration Form</title>
+    <style>
+        
+        
+
+    </style>
+</head>
+<body>
+    <table style="width: 600px;" border="2" align="center">
+        <tr>
+            <td colspan="2"> <h1>Registration Form</h1></td>
+            
+        </tr>
+        <tr>
+            <td><label for="student">Student's Name:</label></td>
+            <td><input type="text" id="student" name="student" required placeholder="Enter Student Name"></td>
+        </tr>
+        <tr>
+            <td> <label for="fatherName">Father's Name:</label></td>
+            <td><input type="text" id="fatherName" name="fatherName" required placeholder="Enter Father Name"></td>
+        </tr>
+        <tr>
+            <td><label for="motherName">Mother's Name:</label></td>
+            <td><input type="text" id="motherName" name="motherName" required placeholder="Enter Mother Name"></td>
+        </tr>
+        <tr>
+            <td> <label for="address">Address:</label></td>
+            <td><textarea id="address" name="address" rows="4" cols="40" required ></textarea></td>
+        </tr>
+        <tr>
+            <td><label>Gender:</label></td>
+            <td>
+                <input type="radio" id="male" name="gender" value="Male"> <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female"> <label for="Female">Female</label>
+                <input type="radio" id="Other" name="gender" value="Other"> <label for="other">Other</label>
+            </td>
+            
+        </tr>
+        <tr>
+            <td> <label>Qualifying Semester(s):</label></td>
+            <td> 
+               <input type="checkbox" id="sem1" name="semester" value="1">
+                <label for="sem1">1st</label>
+                 <input type="checkbox" id="sem2" name="semester" value="2">
+                <label for="sem2">2nd</label>
+                <input type="checkbox" id="sem3" name="semester" value="3">
+                 <label for="sem3">3rd</label>
+                 <input type="checkbox" id="sem4" name="semester" value="4">
+                  <label for="sem4">4th</label>
+            </td>
+           
+        </tr>
+        <tr>
+            <td> <label for="email">Email ID:</label></td>
+            <td><input type="email" id="email" name="email" required placeholder="Enter Email ID"></td>
+        </tr>
+        <tr>
+            <td> <label for="phone">Phone Number:</label></td>
+            <td> <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required></td>
+        </tr>
+        <tr>
+            <td><label for="submissionDate">Submission Date:</label></td>
+            <td> <input type="date" id="submissionDate" name="submissionDate" required></td>
+        </tr>
+        <tr>
+            <td> <label for="website">Your Website URL:</label></td>
+            <td>    <input type="url" id="website" name="website" placeholder="https://google.com"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Register"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+</body>
+</html>
